@@ -746,6 +746,10 @@ char *cmark_render_latex_with_mem(cmark_node *root, int options, int width, cmar
  */
 #define CMARK_OPT_UNSAFE (1 << 17)
 
+/** Treat CRLF as a single line break.
+ */
+#define CMARK_OPT_CRLF (1 << 31)
+
 /**
  * ## Version information
  */

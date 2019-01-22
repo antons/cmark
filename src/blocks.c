@@ -721,7 +721,7 @@ static void S_parser_feed(cmark_parser *parser, const unsigned char *buffer,
         // skip over line ending characters
         if (*buffer == '\r') {
           buffer++;
-          if (buffer == end)
+          if (buffer == end && parser->options & CMARK_OPT_CRLF)
             parser->last_buffer_ended_with_cr = true;
         }
         if (buffer < end && *buffer == '\n')
