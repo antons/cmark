@@ -5,6 +5,7 @@ set(LIBRARY_SOURCES
     core-extensions.c
     table.c
     strikethrough.c
+    mark.c
     autolink.c
     tagfilter.c
     ext_scanners.c
